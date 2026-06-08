@@ -1,7 +1,7 @@
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-SECRET_KEY = 'django-insecure-sane-portfolio-2025'
+SECRET_KEY = 'django-insecure-clean-start-2025'
 DEBUG = True
 ALLOWED_HOSTS = ['*']
 
