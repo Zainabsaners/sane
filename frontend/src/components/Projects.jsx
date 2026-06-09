@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 
-const API_URL = 'http://localhost:8000/api'
+const API_URL = "https://sane-backend.onrender.com/api"
 
 export default function Projects({ darkMode }) {
   const [projects, setProjects] = useState([])

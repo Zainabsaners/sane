@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaWhatsapp, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa'
 
-const API_URL = 'http://localhost:8000/api'
+const API_URL = "https://sane-backend.onrender.com/api"
 
 export default function Contact({ darkMode }) {
   const [formData, setFormData] = useState({
