@@ -35,8 +35,9 @@ def contact_submit(request):
                 recipient_list=['zainabsaners@gmail.com'],
                 fail_silently=False,
             )
-            return Response({'message': '✨ Message sent successfully! I will get back to you soon.'}, status=201)
+            return Response({'message': '✨ Message sent! I will get back to you soon.'}, status=201)
         except Exception as e:
-            return Response({'message': 'Message saved but email failed. I will still see your message.'}, status=201)
+            print(f"Email error: {e}")
+            return Response({'message': 'Message saved. Email notification failed, but I will still see your message.'}, status=201)
     
     return Response(serializer.errors, status=400)
